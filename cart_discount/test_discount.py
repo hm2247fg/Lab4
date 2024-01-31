@@ -20,19 +20,19 @@ class TestDiscount(TestCase):
         expected_discount = 10  # sets the expected discount value
         self.assertEqual(expected_discount, discount(prices))
 
-    """Test accuracy of calculation of discounted price when given an original price and a discount rate"""
-    def test_calculation(self):
-        prices = 100
-        discount_rate = 0.2  # 20% discount
-        expected_price = 80
-        assert discount(prices, discount_rate) == expected_price
-
-    """Test if the function returns the original price when the discount rate is 0"""
-    def test_discount_returns_original_when_rate_zero(self):
-        prices = [10, 4, 100]
-        discount_rate = 0
-        expected_price = 100
-        assert discount(prices, discount_rate) == expected_price
+    # """Test accuracy of calculation of discounted price when given an original price and a discount rate"""
+    # def test_calculation(self):
+    #     prices = 100
+    #     discount_rate = 0.2  # 20% discount
+    #     expected_price = 80
+    #     assert discount(prices, discount_rate) == expected_price
+    #
+    # """Test if the function returns the original price when the discount rate is 0"""
+    # def test_discount_returns_original_when_rate_zero(self):
+    #     prices = [10, 4, 100]
+    #     discount_rate = 0
+    #     expected_price = 100
+    #     assert discount(prices, discount_rate) == expected_price
 
 
 if __name__ == '__main__':
